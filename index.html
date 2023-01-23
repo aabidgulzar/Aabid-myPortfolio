@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/ae193c3b2b.js" crossorigin="anonymous"></script>
+    <title>PortFolio</title>
+</head>
+<body>
+
+<div class="home" id="home">
+    <main class="circle"></main>
+    <main class="circle c1"></main>
+    <main class="circle c2"></main>
+    <main class="circle c3"></main>
+   <img src="me.jpg" alt="Photograph" class="me">
+   <main class="quote"><p>You only have one chance<br> to make first impression.</p>
+   </main>
+   <p class="one">Hi there...<br>
+    
+    <span class="op op">Welcome to my personal portfolio website!</span> <br>
+    <span class="op1">My name is Aabid Gulzar and I am a Student. on this website, you will find a collection of my work, including my portfolio and contact information. I am passionate about web developnments and strive to create innovative and visually stunning designs. Feel free to explore my portfolio and contact me if you have questions or would like to collaborate on a project. Thanku for visiting!</span> 
+</p>
+   
+</div> 
+<img src="darkmode.jpg" onclick="myFunction()" id="dark">
+<span class="line">
+    <script>
+        function myFunction(){
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    <p class="port">Aa bid.</p>
+</span>
+<img src="11aa.jpg" alt="logo" class="logo">
+    <img src="11kk.jpg" alt="logo" class="logo">
+    <ul>
+        <li>&#9776;</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="about" >
+<p class="none" id="about"></p>
+<h1 id="a">About</h1>
+<p> My name is Aabid Gulzar. I am a student. I have a passion for web developnments and have been learning in the industry for 1+ years.<br>
+
+I have a strong background in C, CSS, HTML, JavaScript, and have worked on a variety of projects that have allowed me to hone my skills and expand my knowledge. I am always looking for new challenges and opportunities to improve and grow as a professional. 
+    <a href="#skills" class="skills">Skills</a> </p>
+ <h3 id="skills">Skills</h3>
+    <div class="lang html">HTML<ins class="oneu">90%</ins>
+    </div>
+    <div class="lang css">CSS<ins class="two">80%</ins>
+    </div>
+    <div class="lang javascript">JS<ins class="three">65%</ins>
+    </div>
+    <div class="lang c">C <ins class="four">85%</ins>
+    </div>
+    <div class="lang cv"><a href="mycv.pdf" download="mycv">Download CV</a></div>
+ </div>
+ <div class="education" >
+    <h1 id="education">Education</h1>
+    <div class="cla">
+        <div class="item item1">10<sup>th</sup> Class Student
+            <ol>
+                Acheiving a 10th class qualification,<i> first step towards a bright future</i>
+            </ol>
+           
+        </div>
+        <div class="item item2">
+            Web Developnment
+            <ol>
+                Skilled in web developnment with a proficiency of 70% in HTML,CSS and JavaScript
+            </ol>
+        </div>
+        <div class="item item3">Front-End Developer
+            <ol>
+                Empowering websites with my front-end development skills
+            </ol>
+        </div>
+        <div class="item item4">
+            C Programming
+            <ol>Creating efficient and effective code with my C Programming expertise</ol>
+        </div>
+   </div>
+ </div>
+ <div class="portfolio" >
+    <h1 id="portfolio">Portfolio</h1>
+    <img id="bannerImage" src="1.jpg" alt="" class="iii">
+ <label class="changeimg">
+    <input type="radio" name="sta" onclick="changeImage('1.jpg')" checked>
+    <input type="radio" name="sta" onclick="changeImage('2.jpg')">
+    <input type="radio" name="sta" onclick="changeImage('3.jpg')">
+</label>
+<script>
+   function changeImage(fileName) {
+    let img = document.querySelector("#bannerImage");
+    img.setAttribute("src", fileName);
+   }
+</script>
+<ol type="1" class="prt">
+    <li>Proficient in multiple programming languages.</li>
+    <li>Strong understanding of computer algorithms and data structures.</li>
+    <li>Experienced for various develoging software for various industries.</li>
+</ol>
+</div>
+
+
+<div  class="contact">
+    <h1 id="contact">Contact</h1>
+    <ol class="con">
+        <li class="it"><i class="fa-2x fa-solid fa-phone"></i>Phone.<p class="info">+91 9149576312</p></li>
+        <li class="it"><i class="fa-2x fa-solid fa-envelope"></i>Email.<p class="info">abidgulzar234@gmail.com</p></li>
+        <li class="it"><i class="fa-2x fa-solid fa-location-dot"></i>Location.<p class="info">Kashmir,Kulgam</p></li>
+    </ol>
+</div>
+<div class="farm">
+    <form action="submit.html" >
+        <input type="text" name="name" id="nm" placeholder="Name..." class="comment"><br>
+        <input type="email" placeholder="Email..." class="comment"><br>
+        <input type="password" name="vvv" id="" class="comment" placeholder="Password"><br>
+        <textarea name="nn" id="no" cols="17" rows="8" placeholder="comment" class="cc1"></textarea><button class="send"><i class="fa-3x fa-solid fa-paper-plane"></i></button>
+    </form>
+<a href="https://instagram.com/__aabid.__?igshid=ZDdkNTZiNTM" class="social">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+<a href="https://www.facebook.com/profile.php?id=10072554379420" class="social1">
+    <i class="fa-brands fa-facebook"></i>
+</a>
+</div>
+</body>
+</html>
